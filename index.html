@@ -1,88 +1,156 @@
-<!doctype html>
-<html lang="pt-BR">
-<head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<meta name="description" content="Política de Privacidade do KAIROS Social Desk. Informações sobre tratamento de dados e integração com serviços da Meta.">
-<meta name="theme-color" content="#071321">
-<title>Política de Privacidade | KAIROS Social Desk</title>
-<style>
-:root{color-scheme:dark;--bg:#071321;--panel:#0d2034;--line:#1d4565;--text:#eaf6ff;--muted:#a9bfd2;--cyan:#35caff}
-*{box-sizing:border-box}html{scroll-behavior:smooth}
-body{margin:0;background:radial-gradient(ellipse at 85% 0%,#103b5b 0,transparent 38%),var(--bg);color:var(--text);font:16px/1.75 Inter,Segoe UI,Arial,sans-serif}
-.wrap{width:min(920px,calc(100% - 36px));margin:auto;padding:42px 0 70px}
-header{padding:30px 0;border-bottom:1px solid var(--line)}
-.brand{display:flex;align-items:center;gap:13px;color:var(--cyan);font-weight:800;letter-spacing:.14em;font-size:14px}
-.mark{width:42px;height:42px;border:1px solid #2abfff;border-radius:12px;display:grid;place-items:center;box-shadow:0 0 22px #16a9ed38;font-size:20px}
-h1{font-size:clamp(30px,5vw,46px);line-height:1.13;letter-spacing:-.035em;margin:26px 0 10px}
-.sub,.muted{color:var(--muted)}.meta{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}
-.pill{border:1px solid var(--line);border-radius:99px;padding:5px 12px;color:#c5d9e9;font-size:12px}
-main{padding-top:28px}.notice{border:1px solid #795c24;background:#352a16;border-radius:14px;padding:17px 20px;color:#ffe4aa;margin-bottom:25px}
-.notice strong{color:#ffcf70}nav{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px 22px;margin:24px 0 30px}
-nav strong{display:block;margin-bottom:8px}nav a{color:var(--cyan);text-decoration:none}nav a:hover{text-decoration:underline}
-nav ul{margin:8px 0 0;padding-left:20px;columns:2;column-gap:28px}nav li{break-inside:avoid;margin:4px 0}
-section{padding:23px 0;border-bottom:1px solid #17344d;scroll-margin-top:20px}
-h2{font-size:22px;line-height:1.3;margin:0 0 12px}h3{font-size:17px;margin:18px 0 7px;color:#c9edff}
-p{margin:10px 0;color:#d4e2ee}ul{padding-left:23px;color:#d4e2ee}li{padding:3px 0}
-a{color:var(--cyan)}.contact{background:linear-gradient(145deg,#0c2c45,#0b1d31);border:1px solid #1b668c;border-radius:16px;padding:20px;margin-top:18px}
-.contact strong{color:var(--cyan)}footer{padding-top:26px;color:#8fa9bd;font-size:13px}
-@media(max-width:620px){.wrap{padding-top:22px}nav ul{columns:1}.notice{padding:14px}}
-</style>
-</head>
-<body><div class="wrap">
-<header>
-<div class="brand"><span class="mark">K</span><span>KAIROS <span style="color:#dceeff">SOCIAL DESK</span></span></div>
-<h1>Política de Privacidade</h1>
-<p class="sub">Como o KAIROS Social Desk trata informações durante o uso do aplicativo e de suas integrações.</p>
-<div class="meta"><span class="pill">Atualizada em 26/11/2026</span><span class="pill">Versão 1.0</span></div>
-</header>
-<main>
-<div class="notice"><strong>Revisão necessária antes de enviar à Meta:</strong> complete os campos de responsável e e-mail de contato nesta página. Confirme também as práticas reais de armazenamento, retenção e exclusão de dados da versão que será publicada.</div>
-<p>Esta Política de Privacidade descreve o tratamento de informações relacionado ao KAIROS Social Desk. O tratamento deve ocorrer de acordo com a legislação aplicável, incluindo a Lei Geral de Proteção de Dados Pessoais (LGPD), quando aplicável.</p>
-<nav aria-label="Índice"><strong>Nesta página</strong><ul>
-<li><a href="#responsavel">Responsável</a></li><li><a href="#dados">Dados tratados</a></li><li><a href="#finalidades">Finalidades</a></li><li><a href="#meta">Meta e Instagram</a></li><li><a href="#armazenamento">Armazenamento e segurança</a></li><li><a href="#compartilhamento">Compartilhamento</a></li><li><a href="#retencao">Retenção e exclusão</a></li><li><a href="#direitos">Direitos do titular</a></li><li><a href="#contato">Contato e alterações</a></li>
-</ul></nav>
-<section id="responsavel"><h2>1. Responsável pelo aplicativo</h2>
-<p>O KAIROS Social Desk é um aplicativo destinado à organização e ao gerenciamento de atividades em redes sociais, incluindo recursos que podem se conectar a serviços da Meta mediante autorização do usuário.</p>
-<p><strong>Responsável legal:</strong> [PREENCHER NOME COMPLETO OU RAZÃO SOCIAL].</p>
-<p><strong>E-mail de privacidade e suporte:</strong> [PREENCHER E-MAIL OFICIAL].</p></section>
-<section id="dados"><h2>2. Quais dados podem ser tratados</h2>
-<p>Os dados dependem das funcionalidades utilizadas, das permissões concedidas e das informações disponibilizadas pelas plataformas conectadas. Podem incluir:</p>
-<ul>
-<li>Dados públicos e identificadores da conta, como nome de usuário, nome exibido e identificador da conta.</li>
-<li>Dados técnicos de conexão e autenticação necessários para estabelecer ou manter uma integração autorizada.</li>
-<li>Informações de mensagens ou comentários, caso os recursos correspondentes estejam habilitados e a plataforma os disponibilize.</li>
-<li>Registros técnicos e informações de diagnóstico, como eventos de funcionamento e erros.</li>
-</ul>
-<p><strong>Estado da integração auditado em 25/11/2026:</strong> o KAIROS META GATEWAY recebia requisições de webhook, validava a assinatura e reconhecia JSON válido. Na auditoria consultada, o processamento e o armazenamento de mensagens e comentários ainda estavam pendentes. Esta descrição deverá ser atualizada quando esses módulos forem implementados.</p></section>
-<section id="finalidades"><h2>3. Finalidades do tratamento</h2>
-<p>As informações podem ser utilizadas para identificar contas conectadas, executar as funções solicitadas pelo usuário, manter a integração autorizada, apresentar informações no aplicativo, diagnosticar falhas, proteger os serviços e cumprir obrigações legais.</p>
-<p>O aplicativo deve ser utilizado somente com contas e informações para as quais o usuário tenha autorização legítima.</p></section>
-<section id="meta"><h2>4. Integração com Meta e Instagram</h2>
-<p>Quando o usuário conecta uma conta, o KAIROS Social Desk utiliza os recursos e as permissões disponibilizados pela Meta, conforme a autorização concedida e as regras aplicáveis da plataforma. O uso de dados obtidos por APIs da Meta deve permanecer limitado às finalidades autorizadas e às funcionalidades do aplicativo.</p>
-<p>O usuário pode revogar permissões nas configurações da plataforma Meta. A revogação interrompe o acesso futuro que dependa daquela autorização, mas não necessariamente elimina informações que já tenham sido armazenadas pelo aplicativo. Para solicitar exclusão, consulte a seção 7.</p>
-<p>O KAIROS Social Desk não é afiliado, patrocinado ou endossado pela Meta Platforms, Inc. ou pelo Instagram.</p></section>
-<section id="armazenamento"><h2>5. Armazenamento e segurança</h2>
-<p>O KAIROS Social Desk possui componentes executados no computador do usuário e componentes de integração em infraestrutura de nuvem. Dependendo do recurso utilizado, dados podem ser processados localmente ou transmitidos aos serviços necessários para executar a funcionalidade solicitada.</p>
-<p>O aplicativo utiliza sessões locais do navegador integrado para permitir que o usuário autentique suas próprias contas. O usuário deve proteger o acesso ao computador e às sessões autenticadas.</p>
-<p>São necessárias medidas técnicas e organizacionais adequadas para reduzir riscos de acesso não autorizado, perda ou uso indevido. Nenhum método de transmissão ou armazenamento oferece segurança absoluta.</p></section>
-<section id="compartilhamento"><h2>6. Compartilhamento de dados</h2>
-<p>Dados poderão ser transmitidos à Meta e a provedores de infraestrutura ou processamento utilizados pelo aplicativo quando isso for necessário para executar a integração solicitada, operar os recursos habilitados ou cumprir obrigações legais.</p>
-<p>Antes da publicação definitiva desta política, o responsável deverá confirmar e listar os provedores efetivamente utilizados e os fluxos reais de compartilhamento.</p></section>
-<section id="retencao"><h2>7. Retenção, desconexão e exclusão</h2>
-<p>As informações devem ser mantidas somente pelo período necessário às finalidades informadas ou pelo prazo exigido por obrigação legal. O prazo concreto de retenção de cada categoria de dado deverá ser definido pelo responsável e refletir a implementação efetiva do aplicativo.</p>
-<p>Para interromper uma integração, o usuário pode revogar as permissões do aplicativo nas configurações da Meta e encerrar a sessão correspondente no KAIROS Social Desk.</p>
-<p>Para solicitar acesso, correção ou exclusão de dados pessoais relacionados ao aplicativo, envie uma solicitação ao e-mail oficial informado na seção 9. O responsável poderá solicitar informações razoáveis para confirmar a identidade do solicitante e localizar os dados.</p>
-<p>Algumas informações poderão ser mantidas quando houver obrigação legal ou outra hipótese legítima de conservação prevista na legislação.</p>
-<p><strong>Antes da análise da Meta:</strong> o responsável deve implementar e testar um procedimento operacional de recebimento, validação e atendimento de solicitações de exclusão, inclusive para os dados associados às integrações Meta, conforme os requisitos aplicáveis.</p></section>
-<section id="direitos"><h2>8. Direitos do titular</h2>
-<p>Nos termos da LGPD e quando aplicável, o titular poderá solicitar confirmação da existência de tratamento, acesso, correção, anonimização, bloqueio, eliminação, portabilidade, informação sobre compartilhamento e revogação do consentimento, observadas as condições e exceções legais.</p>
-<p>As solicitações devem ser encaminhadas ao contato indicado nesta política.</p></section>
-<section id="contato"><h2>9. Contato e alterações</h2>
-<p>Esta política poderá ser atualizada para refletir alterações nas funcionalidades, integrações, práticas de tratamento ou exigências legais. A versão vigente será publicada nesta página com a respectiva data de atualização.</p>
-<div class="contact"><p><strong>Contato para privacidade e solicitações de dados</strong></p>
-<p>Responsável: [PREENCHER NOME COMPLETO OU RAZÃO SOCIAL]</p>
-<p>E-mail: [PREENCHER E-MAIL OFICIAL]</p></div></section>
-</main>
-<footer>© 2026 KAIROS Social Desk. Política de Privacidade.</footer>
-</div></body></html>
+&lt;!doctype html&gt;
+&lt;html lang="pt-BR"&gt;
+&lt;head&gt;
+    &lt;meta charset="utf-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1"&gt;
+    &lt;meta name="description" content="Política de Privacidade do KAIROS Social Desk"&gt;
+    &lt;title&gt;Política de Privacidade | KAIROS Social Desk&lt;/title&gt;
+    &lt;style&gt;
+        :root {
+            --bg: #071321; --panel: #0d2034; --line: #1d4565; --cyan: #2abfff;
+            --text: #e0e8f0; --muted: #7a9bb5;
+        }
+        * { box-sizing: border-box; }
+        body { margin: 0; background: var(--bg); color: var(--text); font-family: system-ui, sans-serif; }
+        .wrap { max-width: 880px; margin: auto; padding: 40px 20px 80px; }
+        header { padding: 20px 0; border-bottom: 1px solid var(--line); }
+        .brand { font-weight: 800; letter-spacing: .14em; font-size: 14px; color: var(--cyan); }
+        h1 { font-size: clamp(26px, 4vw, 40px); margin: 24px 0 8px; }
+        h2 { font-size: 1.25rem; margin: 32px 0 12px; color: var(--cyan); border-bottom: 1px solid var(--line); padding-bottom: 6px; }
+        h3 { font-size: 1.05rem; margin: 20px 0 8px; }
+        p, li { line-height: 1.7; color: var(--text); }
+        .muted { color: var(--muted); font-size: .92rem; }
+        .pill { display: inline-block; border: 1px solid var(--line); border-radius: 8px; padding: 3px 10px; font-size: .8rem; margin-top: 4px; }
+        .notice { background: #2a1a05; border: 1px solid #795c24; color: #fffcf0; padding: 16px; border-radius: 8px; margin: 20px 0; }
+        .notice strong { color: #ffc857; }
+        .warn { background: #2a0505; border: 1px solid #792424; color: #fffcf0; padding: 16px; border-radius: 8px; margin: 20px 0; }
+        .warn strong { color: #ff6b6b; }
+        ul { padding-left: 20px; }
+        li { margin: 4px 0; }
+        a { color: var(--cyan); text-decoration: none; }
+        a:hover { text-decoration: underline; }
+        footer { margin-top: 60px; padding-top: 20px; border-top: 1px solid var(--line); color: var(--muted); font-size: .85rem; }
+        code { background: var(--panel); padding: 2px 6px; border-radius: 4px; font-size: .88rem; }
+    &lt;/style&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;div class="wrap"&gt;
+
+&lt;header&gt;
+    &lt;div class="brand"&gt;KAIROS SOCIAL DESK&lt;/div&gt;
+    &lt;h1&gt;Política de Privacidade&lt;/h1&gt;
+    &lt;p class="muted"&gt;Última atualização: 25 de novembro de 2026&lt;/p&gt;
+&lt;/header&gt;
+
+&lt;main&gt;
+
+&lt;div class="notice"&gt;
+    &lt;strong&gt;⚠ Aviso importante:&lt;/strong&gt; Esta página contém campos a serem preenchidos (nome/legal e e-mail). O conteúdo &lt;strong&gt;deve ser revisado e completado&lt;/strong&gt; antes de ser submetido à Meta ou publicado oficialmente.&lt;/div&gt;
+
+&lt;h2&gt;1. Identidade do Controlador&lt;/h2&gt;
+&lt;p&gt;O controlador dos dados pessoais tratados por esta aplicação é:&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;&lt;strong&gt;Razão Social / Nome Completo:&lt;/strong&gt; [PREENCHER NOME COMPLETO OU RAZÃO SOCIAL]&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;E-mail de contato (LGPD):&lt;/strong&gt; [PREENCHER E-MAIL OFICIAL]&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Endereço:&lt;/strong&gt; [PREENCHER ENDEREÇO COMPLETO]&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;CNPJ / CPF:&lt;/strong&gt; [PREENCHER CNPJ OU CPF]&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p class="muted"&gt;Os campos acima devem ser preenchidos com os dados reais do responsável legal pelo tratamento de dados. Enquanto não preenchidos, o controlador legal não está plenamente identificado conforme o art. 5º, VI e art. 7º, III da LGPD.&lt;/p&gt;
+
+&lt;h2&gt;2. Dados Pessoais Coletados&lt;/h2&gt;
+&lt;p&gt;O KAIROS Social Desk trata, no mínimo, os seguintes tipos de dados pessoais:&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;&lt;strong&gt;Dados de identificação:&lt;/strong&gt; nome, e-mail, ID do usuário do Meta/Instagram.&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Dados de comunicação:&lt;/strong&gt; mensagens, comentários e interações enviadas via Facebook e Instagram (obtidas através da API do Meta).&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Dados técnicos:&lt;/strong&gt; endereço IP, data/hora da solicitação, user-agent, tokens e assinaturas digitais utilizados na validação de integridade das requisições.&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Dados de uso:&lt;/strong&gt; registros de acesso, configurações e preferências do usuário.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;3. Finalidades do Tratamento&lt;/h2&gt;
+&lt;p&gt;Os dados pessoais são tratados para as seguintes finalidades:&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;Processamento e gerenciamento de mensagens e comentários de clientes nos canais do Facebook e Instagram;&lt;/li&gt;
+    &lt;li&gt;Identificação e autenticação de usuários da plataforma KAIROS Social Desk;&lt;/li&gt;
+    &lt;li&gt;Garantia da segurança e integridade das comunicações com a API do Meta (incluindo validação de assinaturas de webhook e estrutura JSON);&lt;/li&gt;
+    &lt;li&gt;Cumprimento de obrigações legais e regulatórias aplicáveis;&lt;/li&gt;
+    &lt;li&gt;Melhoria contínua do produto e experiência do usuário.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;4. Integração com a API do Meta / Instagram&lt;/h2&gt;
+&lt;p&gt;O KAIROS Social Desk integra-se aos serviços do Meta (Facebook e Instagram) por meio da &lt;strong&gt;Graph API&lt;/strong&gt; e do &lt;strong&gt;sistema de webhooks&lt;/strong&gt; para receber notificações em tempo real de mensagens e comentários.&lt;/p&gt;
+&lt;h3&gt;4.1 Fluxo de recebimento de dados&lt;/h3&gt;
+&lt;p&gt;Quando um cliente envia uma mensagem ou comentário no Facebook ou Instagram, o Meta encaminha uma notificação via webhook para o gateway do KAIROS Social Desk. Essa notificação contém:&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;JSON com os dados da mensagem/comentário (remetente, texto, ID da conversa, etc.);&lt;/li&gt;
+    &lt;li&gt;Assinatura digital (X-Hub-Signature-256 ou similar) que valida a autenticidade da requisição.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3&gt;4.2 Status de processamento (Auditoria de 25/11/2026)&lt;/h3&gt;
+&lt;div class="notice"&gt;
+    &lt;strong&gt;Informação de auditoria:&lt;/strong&gt; Conforme auditoria do projeto realizada em &lt;strong&gt;25 de novembro de 2026&lt;/strong&gt;, o gateway do KAIROS Social Desk &lt;strong&gt;valida as assinaturas dos webhooks do Meta e a estrutura JSON&lt;/strong&gt; das requisições recebidas. No entanto, o &lt;strong&gt;processamento e armazenamento efetivo das mensagens e comentários&lt;/strong&gt; ainda estavam &lt;strong&gt;pendentes de implementação&lt;/strong&gt; na data da auditoria. Este dado é informativo e deve ser atualizado conforme o progresso do desenvolvimento.&lt;/div&gt;
+&lt;h3&gt;4.3 Dados transferidos pela API do Meta&lt;/h3&gt;
+&lt;p&gt;O Meta pode fornecer, por meio de seus serviços e APIs, dados pessoais dos usuários do Facebook e Instagram, incluindo nome, foto de perfil, ID do usuário, e conteúdo de mensagens/comentários, conforme configurado pelo controlador e conforme os Termos do Meta.&lt;/p&gt;
+
+&lt;h2&gt;5. Armazenamento e Segurança&lt;/h2&gt;
+&lt;p&gt;Os dados pessoais são armazenados em servidores seguros, com medidas técnicas e organizacionais adequadas para proteger os dados contra acesso não autorizado, destruição, perda ou alteração. Entre as medidas adotadas estão:&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;Criptografia de dados em trânsito (TLS/SSL);&lt;/li&gt;
+    &lt;li&gt;Controle de acesso baseado em autenticação forte;&lt;/li&gt;
+    &lt;li&gt;Validação de integridade de webhooks (assinaturas) no gateway;&lt;/li&gt;
+    &lt;li&gt;Logs de auditoria de acesso aos dados;&lt;/li&gt;
+    &lt;li&gt;Backups regulares e testes de recuperação de desastres.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;6. Compartilhamento de Dados&lt;/h2&gt;
+&lt;p&gt;Os dados pessoais tratados pelo KAIROS Social Desk &lt;strong&gt;não são vendidos ou compartilhados com terceiros&lt;/strong&gt;, exceto nas seguintes situações:&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;&lt;strong&gt;Meta Platforms, Inc.:&lt;/strong&gt; como fonte dos dados (mensagens e comentários), conforme descrito na Seção 4;&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Operadores de processamento:&lt;/strong&gt; terceiros contratados para serviços de hospedagem, processamento de dados ou suporte técnico, que atuam em nome do controlador e estão sujeitos a contratos de confidencialidade e proteção de dados;&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Obrigações legais:&lt;/strong&gt; quando exigido por lei, ordem judicial ou regulamento aplicável.&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;h2&gt;7. Retenção e Exclusão de Dados&lt;/h2&gt;
+&lt;p&gt;Os dados pessoais são mantidos apenas pelo tempo necessário para cumprir as finalidades para as quais foram coletados, ou conforme exigido por lei. O usuário poderá solicitar a exclusão de seus dados a qualquer momento, enviando um e-mail para o endereço do controlador (Seção 1).&lt;/p&gt;
+&lt;h3&gt;7.1 Pedido de exclusão de dados&lt;/h3&gt;
+&lt;p&gt;O titular pode solicitar a exclusão de dados pessoais a qualquer momento. O controlador se compromete a atender o pedido no prazo máximo de &lt;strong&gt;15 (quinze) dias úteis&lt;/strong&gt;, conforme o art. 18, VI da LGPD.&lt;/p&gt;
+
+&lt;h2&gt;8. Direitos do Titular (LGPD)&lt;/h2&gt;
+&lt;p&gt;Em conformidade com a Lei nº 13.709/2018 (Lei Geral de Proteção de Dados – LGPD), o titular dos dados pessoais tem os seguintes direitos:&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;&lt;strong&gt;Confirmação e acesso:&lt;/strong&gt; confirmar a existência de tratamento e acessar seus dados pessoais;&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Correção:&lt;/strong&gt; solicitar a correção de dados incompletos, inexatos ou desatualizados;&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Anonimização, bloqueio ou eliminação:&lt;/strong&gt; solicitar a anonimização, bloqueio ou eliminação de dados desnecessários, excessivos ou tratados em desconformidade com a LGPD;&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Portabilidade:&lt;/strong&gt; solicitar a transferência dos dados a outro fornecedor de serviço ou produto, mediante requisição prévia;&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Eliminação:&lt;/strong&gt; solicitar a eliminação dos dados pessoais tratados com o consentimento do titular;&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Informação sobre compartilhamento:&lt;/strong&gt; obter informação sobre entidades com as quais o controlador realizou compartilhamento de dados;&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Informação sobre possibilidade de negar consentimento:&lt;/strong&gt; e sobre as consequências da negativa;&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Revogação do consentimento:&lt;/strong&gt; o titular pode revogar o consentimento a qualquer momento, mediante comunicação ao controlador.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;Para exercer qualquer um dos direitos acima, entre em contato pelo e-mail: [PREENCHER E-MAIL OFICIAL].&lt;/p&gt;
+
+&lt;h2&gt;9. Crianças e Adolescentes&lt;/h2&gt;
+&lt;p&gt;O KAIROS Social Desk &lt;strong&gt;não destina seus serviços a crianças ou adolescentes menores de 18 anos&lt;/strong&gt;. Não coletamos intencionalmente dados pessoais de menores. Caso o controlador tome ciência de que dados de menores foram coletados sem o consentimento do responsável legal, os dados serão eliminados imediatamente, conforme o art. 14 da LGPD.&lt;/p&gt;
+
+&lt;h2&gt;10. Atualizações desta Política&lt;/h2&gt;
+&lt;p&gt;Esta Política de Privacidade pode ser atualizada periodicamente para refletir mudanças nas práticas de tratamento de dados, na legislação aplicável ou nas funcionalidades do KAIROS Social Desk. Quaisquer alterações significativas serão comunicadas aos titulares por meio da plataforma ou por e-mail.&lt;/p&gt;
+
+&lt;h2&gt;11. Contato&lt;/h2&gt;
+&lt;p&gt;Para dúvidas, solicitações de exercício de direitos ou qualquer questão relacionada à proteção de dados pessoais, entre em contato:&lt;/p&gt;
+&lt;ul&gt;
+    &lt;li&gt;&lt;strong&gt;E-mail (LGPD):&lt;/strong&gt; [PREENCHER E-MAIL OFICIAL]&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Endereço postal:&lt;/strong&gt; [PREENCHER ENDEREÇO COMPLETO]&lt;/li&gt;
+    &lt;li&gt;&lt;strong&gt;Responsável pelo tratamento de dados (DPO):&lt;/strong&gt; [PREENCHER NOME DO DPO OU RESPONSÁVEL]&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;div class="warn"&gt;
+    &lt;strong&gt;⚠ ALERTA LEGAL:&lt;/strong&gt; Esta Política de Privacidade contém campos &lt;strong&gt;obrigatórios não preenchidos&lt;/strong&gt; (identificado em [PREENCHER ...]). &lt;strong&gt;Não submeta esta política à Meta ou publique esta página antes de preencher e revisar todos os campos com os dados corretos e atualizados do controlador.&lt;/strong&gt; A publicação de uma política de privacidade com dados fictícios pode configurar violação de obrigação legal sob a LGPD e pode resultar na recusa do pedido de acesso à API do Meta.&lt;/div&gt;
+
+&lt;/main&gt;
+
+&lt;footer&gt;
+    &lt;p&gt;KAIROS Social Desk — Política de Privacidade&lt;/p&gt;
+    &lt;p class="muted"&gt;© 2026 [PREENCHER NOME COMPLETO OU RAZÃO SOCIAL]. Todos os direitos reservados.&lt;/p&gt;
+&lt;/footer&gt;
+
+&lt;/div&gt;
+&lt;/body&gt;
+&lt;/html&gt;
