@@ -8,39 +8,148 @@
 <title>Política de Privacidade | KAIROS Social Desk</title>
 <style>
 :root{color-scheme:dark;--bg:#071321;--panel:#0d2034;--line:#1d4565;--cyan:#35caff;--text:#eaf4fc;--muted:#a9bfd2}
-*{box-sizing:border-box}body{margin:0;background:radial-gradient(ellipse at 85% 0%,#103b5b 0,transparent 38%),var(--bg);color:var(--text);font:16px/1.72 system-ui,Segoe UI,Arial,sans-serif}
-.wrap{width:min(920px,calc(100% - 36px));margin:auto;padding:42px 0 70px}header{padding:22px 0 28px;border-bottom:1px solid var(--line)}
-.brand{color:var(--cyan);font-size:14px;font-weight:800;letter-spacing:.14em}h1{font-size:clamp(30px,5vw,44px);line-height:1.15;margin:26px 0 10px}
-h2{font-size:22px;line-height:1.3;margin:0 0 12px}h3{font-size:17px;margin:20px 0 8px;color:#c9edff}
-p,li{color:#d4e2ee}p{margin:10px 0}a{color:var(--cyan)}.meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;overflow-x:hidden;background:radial-gradient(ellipse at 85% 0%,#103b5b 0,transparent 38%),var(--bg);color:var(--text);font:16px/1.72 system-ui,Segoe UI,Arial,sans-serif}
+.wrap{width:calc(100% - 36px);max-width:920px;min-width:0;margin:0 auto;padding:42px 0 70px}
+header{padding:22px 0 28px;border-bottom:1px solid var(--line)}
+.brand{color:var(--cyan);font-size:14px;font-weight:800;letter-spacing:.14em}
+h1{font-size:clamp(30px,5vw,44px);line-height:1.15;margin:26px 0 10px;overflow-wrap:anywhere}
+h2{font-size:22px;line-height:1.3;margin:0 0 12px}
+h3{font-size:17px;margin:20px 0 8px;color:#c9edff}
+p,li{color:#d4e2ee;overflow-wrap:anywhere}
+p{margin:10px 0}
+a{color:var(--cyan);text-underline-offset:3px}
+.meta{display:flex;gap:10px;flex-wrap:wrap;margin-top:16px}
 .pill{border:1px solid var(--line);border-radius:99px;padding:4px 11px;color:#c5d9e9;font-size:12px}
-.notice{background:#352a16;border:1px solid #795c24;color:#ffe4aa;padding:18px 20px;border-radius:14px;margin:26px 0}.notice strong{color:#ffcf70}
-nav{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px 22px;margin:26px 0 32px}nav strong{display:block;margin-bottom:8px}
-nav ul{margin:8px 0 0;padding-left:20px;columns:2;column-gap:28px}nav li{break-inside:avoid;margin:4px 0}
-section{padding:24px 0;border-bottom:1px solid #17344d;scroll-margin-top:20px}ul{padding-left:22px}li{padding:3px 0}
-.contact{background:linear-gradient(145deg,#0c2c45,#0b1d31);border:1px solid #1b668c;border-radius:16px;padding:20px;margin-top:18px}.contact strong{color:var(--cyan)}
-footer{padding-top:26px;color:#8fa9bd;font-size:13px}@media(max-width:620px){.wrap{padding-top:24px}nav ul{columns:1}}
+.status{background:#0b2639;border:1px solid #17618a;color:#cceeff;padding:17px 19px;border-radius:14px;margin:26px 0}
+.status strong{color:#65dcff}
+nav{background:var(--panel);border:1px solid var(--line);border-radius:14px;padding:18px 22px;margin:26px 0 32px;min-width:0}
+nav strong{display:block;margin-bottom:8px}
+nav ul{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:4px 24px;margin:8px 0 0;padding-left:20px}
+nav li{min-width:0;break-inside:avoid;margin:2px 0}
+section{padding:24px 0;border-bottom:1px solid #17344d;scroll-margin-top:20px;min-width:0}
+ul{padding-left:22px}
+li{padding:3px 0}
+.contact{background:linear-gradient(145deg,#0c2c45,#0b1d31);border:1px solid #1b668c;border-radius:16px;padding:20px;margin-top:18px;overflow-wrap:anywhere}
+.contact strong{color:var(--cyan)}
+footer{padding-top:26px;color:#8fa9bd;font-size:13px}
+@media(max-width:620px){.wrap{width:calc(100% - 28px);padding-top:24px}nav{padding:16px}nav ul{grid-template-columns:1fr}h1{font-size:clamp(29px,9vw,38px)}}
 </style>
 </head>
-<body><div class="wrap">
-<header><div class="brand">KAIROS SOCIAL DESK</div><h1>Política de Privacidade</h1><p>Informações sobre o tratamento de dados relacionado ao KAIROS Social Desk.</p><div class="meta"><span class="pill">Versão 1.1</span><span class="pill">Atualizada em 26/11/2026</span></div></header>
+<body>
+<div class="wrap">
+<header>
+<div class="brand">KAIROS SOCIAL DESK</div>
+<h1>Política de Privacidade</h1>
+<p>Como o KAIROS Social Desk trata informações pessoais e dados das contas conectadas.</p>
+<div class="meta"><span class="pill">Versão 1.2</span><span class="pill">Atualizada em 26/11/2026</span></div>
+</header>
 <main>
-<div class="notice"><strong>Rascunho para revisão antes do uso oficial.</strong> O contato para assuntos de privacidade é feito pelo e-mail informado nesta política. As práticas de armazenamento, retenção e exclusão ainda precisam ser confirmadas com a versão de produção do aplicativo. Não envie esta página para análise da Meta enquanto esses pontos estiverem pendentes.</div>
-<p>Esta Política de Privacidade descreve como o KAIROS Social Desk pode tratar informações quando o usuário utiliza o aplicativo e autoriza uma integração com serviços da Meta, incluindo Instagram. O tratamento deverá observar a legislação aplicável, inclusive a Lei Geral de Proteção de Dados Pessoais (Lei nº 13.709/2018, LGPD), quando aplicável.</p>
-<nav aria-label="Índice da política"><strong>Conteúdo</strong><ul>
-<li><a href="#responsavel">Responsável pelo tratamento</a></li><li><a href="#dados">Dados envolvidos</a></li><li><a href="#finalidades">Finalidades</a></li><li><a href="#meta">Meta e Instagram</a></li><li><a href="#armazenamento">Armazenamento e segurança</a></li><li><a href="#compartilhamento">Compartilhamento</a></li><li><a href="#retencao">Retenção e exclusão</a></li><li><a href="#direitos">Direitos do titular</a></li><li><a href="#menores">Crianças e adolescentes</a></li><li><a href="#contato">Alterações e contato</a></li>
-</ul></nav>
-<section id="responsavel"><h2>1. Responsável pelo tratamento</h2><p>O responsável legal pelo KAIROS Social Desk e pelo tratamento de dados pessoais deverá ser identificado abaixo:</p><ul>
-<li><strong>Responsável:</strong> Cleber Benjamin Peixoto</li><li><strong>E-mail para assuntos de privacidade:</strong> cleber1204@gmail.com</li></ul><p>O e-mail acima é o canal de contato para dúvidas e solicitações relacionadas a dados pessoais.</p></section>
-<section id="dados"><h2>2. Dados envolvidos</h2><p>Os dados efetivamente tratados dependem das funções ativadas, das permissões autorizadas pelo usuário e dos campos enviados pela plataforma integrada. Em notificações de webhook da Meta, podem existir identificadores de contas, identificadores de eventos ou conversas, conteúdo de mensagens ou comentários e metadados técnicos, conforme o tipo de evento inscrito.</p><p>O KAIROS Social Desk é um aplicativo desktop desenvolvido com WPF/.NET, banco SQLite e mecanismo de navegador WebView2. A auditoria técnica disponível não especifica integralmente quais campos são gravados no banco local nem o ciclo de vida dos dados de sessão do navegador. Essa descrição precisa ser complementada após a conferência da versão de produção.</p></section>
-<section id="finalidades"><h2>3. Finalidades do tratamento</h2><p>Quando os recursos correspondentes estiverem implementados e habilitados, o tratamento poderá ser necessário para conectar contas autorizadas, receber e organizar eventos de redes sociais, disponibilizar as funções solicitadas pelo usuário, manter o funcionamento do aplicativo, diagnosticar falhas e proteger a integração contra requisições inválidas.</p><p>O aplicativo não deve ser utilizado para acessar contas, mensagens ou informações sem autorização adequada.</p></section>
-<section id="meta"><h2>4. Integração com Meta e Instagram</h2><p>O KAIROS Social Desk utiliza ou está sendo preparado para utilizar recursos oficiais disponibilizados pela Meta, conforme as permissões aprovadas e concedidas pelo usuário. O acesso fica sujeito às condições, políticas e limites técnicos definidos pela Meta.</p><h3>Estado técnico registrado na auditoria de 25/11/2026</h3><p>Na auditoria técnica disponível, o KAIROS META GATEWAY recebia requisições de webhook, validava a assinatura HMAC da Meta e reconhecia JSON válido. O processamento específico e o armazenamento de mensagens e comentários ainda estavam pendentes de implementação naquela data.</p><p>Portanto, esta política não afirma que o sistema já mantém uma caixa de entrada funcional ou que já armazena mensagens e comentários. Quando esses recursos forem implementados, esta seção deverá ser revisada para refletir os dados realmente tratados, as permissões utilizadas e os fluxos de armazenamento e exclusão.</p><p>O usuário pode revogar as permissões concedidas ao aplicativo nas configurações da plataforma Meta. A revogação interrompe novos acessos que dependam daquela autorização, mas não substitui um pedido de exclusão de dados que já tenham sido armazenados.</p><p>O KAIROS Social Desk é um produto independente e não é afiliado, patrocinado ou endossado pela Meta Platforms, Inc. ou pelo Instagram.</p></section>
-<section id="armazenamento"><h2>5. Armazenamento e segurança</h2><p>O aplicativo possui um banco de dados SQLite local e utiliza o WebView2 para recursos de navegação. A auditoria disponível não documenta todos os dados gravados localmente, as configurações de proteção do banco, os prazos de retenção ou o comportamento completo das sessões do navegador. Esses detalhes precisam ser verificados antes da disponibilização pública.</p><p>O gateway valida a autenticidade das requisições recebidas por meio da assinatura HMAC, conforme a implementação auditada. Essa validação não deve ser interpretada como garantia de que todos os dados armazenados estejam criptografados ou de que existam rotinas de backup e recuperação já implantadas.</p><p>O responsável deverá documentar e aplicar medidas técnicas e administrativas adequadas ao ambiente real de operação, incluindo controle de acesso, proteção de credenciais, transmissão segura e resposta a incidentes.</p></section>
-<section id="compartilhamento"><h2>6. Compartilhamento de dados</h2><p>A integração com a Meta envolve o recebimento de informações transmitidas pela própria plataforma, de acordo com as permissões e eventos configurados. Se forem utilizados provedores externos de hospedagem, processamento, suporte ou armazenamento, eles deverão ser identificados e avaliados pelo responsável antes da operação pública, com a descrição das respectivas finalidades.</p><p>Esta política deverá ser atualizada caso haja novos operadores, transferências internacionais ou outras formas de compartilhamento. Não se deve presumir que um fornecedor específico seja utilizado sem confirmação da infraestrutura efetivamente implantada.</p></section>
-<section id="retencao"><h2>7. Retenção e exclusão de dados</h2><p>Os prazos de retenção dependem dos dados que forem efetivamente armazenados e das finalidades aplicáveis. A auditoria de 25/11/2026 não confirmou a implementação do armazenamento de mensagens e comentários pelo gateway, nem definiu um prazo de retenção para esses dados.</p><p>Antes de ativar o processamento em produção, o responsável deverá definir os prazos de retenção, implementar um procedimento de exclusão e testar sua execução nos bancos e serviços envolvidos.</p><p>O titular poderá solicitar informações ou exclusão de dados pelo e-mail indicado na seção de contato. Também poderá revogar as permissões do aplicativo nas configurações da Meta.</p><p>Solicitações serão avaliadas conforme a LGPD e outras normas aplicáveis. Dados cuja conservação seja exigida por lei poderão ser mantidos pelo período legalmente necessário.</p></section>
-<section id="direitos"><h2>8. Direitos do titular</h2><p>Nos termos da LGPD e observadas as condições legais, o titular poderá solicitar confirmação da existência de tratamento, acesso aos dados, correção de informações incompletas ou desatualizadas, anonimização, bloqueio ou eliminação de dados desnecessários ou tratados em desconformidade, portabilidade quando aplicável, informação sobre compartilhamentos e revogação do consentimento quando essa for a base legal utilizada.</p><p>Os pedidos deverão ser encaminhados ao contato oficial informado na seção 10. O responsável poderá solicitar informações razoáveis para confirmar a identidade do solicitante e proteger os dados contra acesso indevido.</p></section>
-<section id="menores"><h2>9. Crianças e adolescentes</h2><p>O KAIROS Social Desk é uma ferramenta de gestão de redes sociais destinada ao uso profissional e não é direcionada a crianças. O responsável deverá observar as regras específicas da LGPD para qualquer tratamento que envolva dados pessoais de crianças ou adolescentes.</p></section>
-<section id="contato"><h2>10. Alterações e contato</h2><p>Esta política poderá ser atualizada quando novas funcionalidades forem lançadas, quando os fluxos de dados forem alterados ou quando houver mudanças legais relevantes. A versão vigente deverá permanecer disponível no endereço público do aplicativo.</p><div class="contact"><strong>Contato para privacidade e solicitações</strong><p>Responsável: Cleber Benjamin Peixoto</p><p>E-mail: cleber1204@gmail.com</p></div></section>
-<div class="notice"><strong>Pendências antes da submissão à Meta:</strong> confirmar exatamente quais informações o aplicativo e o WebView2 armazenam; identificar os fornecedores de infraestrutura efetivamente utilizados; definir e testar retenção e exclusão; revisar esta política quando o processamento de mensagens e comentários entrar em operação.</div>
-</main><footer>© 2026 KAIROS Social Desk. Política de Privacidade.</footer>
-</div></body></html>
+<div class="status"><strong>Estado atual do produto.</strong> O KAIROS Social Desk está em desenvolvimento e uso controlado. O aplicativo desktop já mantém cadastros, conteúdo e perfis locais do navegador. O gateway possui suporte técnico para conectar contas Meta e registrar notificações de webhook assinadas. A entrega real de mensagens e comentários ainda está em validação ponta a ponta. A publicação automática e uma caixa de entrada integrada não devem ser consideradas disponíveis nesta versão.</div>
+
+<p>Esta política explica quais informações podem ser tratadas quando você utiliza o KAIROS Social Desk e autoriza uma integração com serviços da Meta, incluindo Instagram. O tratamento é realizado conforme a legislação aplicável, inclusive a Lei Geral de Proteção de Dados Pessoais (Lei nº 13.709/2018, LGPD), quando aplicável.</p>
+
+<nav aria-label="Índice da política">
+<strong>Conteúdo</strong>
+<ul>
+<li><a href="#responsavel">Responsável pelo tratamento</a></li>
+<li><a href="#dados">Dados tratados</a></li>
+<li><a href="#finalidades">Finalidades</a></li>
+<li><a href="#meta">Meta e Instagram</a></li>
+<li><a href="#armazenamento">Armazenamento e segurança</a></li>
+<li><a href="#compartilhamento">Compartilhamento</a></li>
+<li><a href="#retencao">Retenção e exclusão</a></li>
+<li><a href="#direitos">Direitos do titular</a></li>
+<li><a href="#menores">Crianças e adolescentes</a></li>
+<li><a href="#contato">Alterações e contato</a></li>
+</ul>
+</nav>
+
+<section id="responsavel">
+<h2>1. Responsável pelo tratamento</h2>
+<p>O responsável pelo KAIROS Social Desk e pelo tratamento de dados pessoais descrito nesta política é:</p>
+<ul>
+<li><strong>Responsável:</strong> Cleber Benjamin Peixoto</li>
+<li><strong>E-mail para assuntos de privacidade:</strong> <a href="mailto:cleber1204@gmail.com">cleber1204@gmail.com</a></li>
+</ul>
+<p>Esse e-mail é o canal para dúvidas, solicitações de titulares e pedidos relacionados a dados pessoais.</p>
+</section>
+
+<section id="dados">
+<h2>2. Dados tratados</h2>
+<p>Os dados tratados dependem das funções utilizadas e das permissões concedidas. Conforme a implementação atual, as categorias podem incluir:</p>
+<ul>
+<li><strong>Cadastros locais de contas:</strong> nome de exibição, plataforma, nome de usuário do Instagram, descrição, foto de perfil escolhida pelo usuário, status do cadastro e datas de criação.</li>
+<li><strong>Conteúdo e organização:</strong> campanhas, rascunhos, itens do calendário editorial, metadados de mídias, categorias, etiquetas e arquivos que o usuário adicionar à biblioteca local.</li>
+<li><strong>Dados de navegação:</strong> cookies, armazenamento local, cache e informações de sessão mantidas pelos próprios sites dentro dos perfis WebView2. Esses dados podem manter o login do usuário e permanecem no perfil local quando a janela do navegador é fechada.</li>
+<li><strong>Conexões Meta:</strong> identificadores da conta profissional e do portfólio empresarial, nome de usuário, tipo e estado da conexão, datas e identificadores técnicos de autorização.</li>
+<li><strong>Credenciais de integração:</strong> tokens de acesso Meta são armazenados no gateway, fora do aplicativo desktop, cifrados com AES-GCM. O aplicativo não recebe o token em texto aberto.</li>
+<li><strong>Notificações de webhook:</strong> tipo do evento, identificador da conta Instagram, horários, estado de associação da conta e conteúdo JSON recebido. Dependendo do evento enviado pela Meta, esse conteúdo pode incluir identificadores de remetente ou destinatário, mensagens, comentários e metadados relacionados.</li>
+<li><strong>Diagnóstico técnico:</strong> mensagens de erro, estado de componentes e registros necessários para investigar falhas e proteger a integração. Os logs do gateway são projetados para não registrar tokens ou segredos.</li>
+</ul>
+<p>O conteúdo efetivamente recebido em cada caso depende dos campos inscritos no painel Meta e dos eventos enviados pela plataforma.</p>
+</section>
+
+<section id="finalidades">
+<h2>3. Finalidades do tratamento</h2>
+<p>As informações são utilizadas para permitir o cadastro e a organização de contas, manter sessões de navegação, organizar campanhas e mídias, iniciar e acompanhar autorizações da Meta, associar notificações à conta correspondente, diagnosticar falhas e proteger os serviços contra acessos ou requisições inválidas.</p>
+<p>O aplicativo não deve ser utilizado para acessar contas, mensagens ou informações sem autorização adequada do titular ou do administrador legítimo da conta.</p>
+</section>
+
+<section id="meta">
+<h2>4. Integração com Meta e Instagram</h2>
+<p>A integração utiliza recursos oficiais disponibilizados pela Meta, sujeitos às permissões, análises, limites técnicos e condições definidas pela própria plataforma. O usuário autoriza a conexão por meio do fluxo de login ou da configuração empresarial aplicável.</p>
+<p>O gateway valida a assinatura HMAC das notificações recebidas antes de processá-las. Quando uma notificação válida chega ao endpoint configurado, o sistema normaliza o evento e pode armazenar seu conteúdo no banco Cloudflare D1. Eventos sem uma conexão correspondente ou com mais de uma correspondência podem ser mantidos com estado de associação não resolvida, sem atribuição arbitrária a uma conta.</p>
+<p>A existência desse processamento no gateway não significa que todas as notificações estejam chegando em produção, nem que exista uma caixa de entrada ou ferramenta de resposta disponível no aplicativo desktop. A entrega real de mensagens e comentários permanece sujeita à validação da configuração e dos eventos enviados pela Meta. A publicação automática também não está disponível nesta versão.</p>
+<p>O usuário pode revogar as permissões concedidas ao aplicativo nas configurações da plataforma Meta. A revogação impede novos acessos que dependam daquela autorização, mas não elimina automaticamente dados que já tenham sido armazenados pelo KAIROS.</p>
+<p>O KAIROS Social Desk é um produto independente e não é afiliado, patrocinado ou endossado pela Meta Platforms, Inc. ou pelo Instagram.</p>
+</section>
+
+<section id="armazenamento">
+<h2>5. Armazenamento e segurança</h2>
+<p><strong>No computador do usuário:</strong> os cadastros e dados de trabalho do aplicativo são mantidos em banco SQLite local. Os perfis do WebView2 são armazenados separadamente, por conta, e podem conservar cookies, cache e armazenamento local dos sites acessados. Fechar uma sessão do navegador não apaga esses dados.</p>
+<p><strong>Na infraestrutura do gateway:</strong> o Cloudflare Workers executa os endpoints da integração e o Cloudflare D1 armazena dados de conexão, sessões de autorização e notificações de webhook. Os tokens Meta são cifrados com AES-GCM antes de serem gravados. As notificações de webhook são armazenadas como payload JSON após validação da assinatura. Não se deve interpretar a criptografia dos tokens como garantia de que todos os campos do banco estejam cifrados individualmente.</p>
+<p>O gateway mantém o App Secret e outras chaves de integração no ambiente do servidor, não no aplicativo desktop. As comunicações com os serviços da integração utilizam HTTPS. Nenhuma medida de segurança elimina integralmente os riscos inerentes a sistemas conectados à internet ou a dispositivos locais.</p>
+</section>
+
+<section id="compartilhamento">
+<h2>6. Compartilhamento de dados</h2>
+<p>Os dados necessários à conexão e aos eventos são trocados com a Meta, conforme a autorização e os recursos utilizados. A infraestrutura Cloudflare Workers e D1 processa e armazena os dados enviados ao gateway para viabilizar a integração.</p>
+<p>Quando o usuário navega pelo WebView2 até sites de terceiros, esses sites podem receber dados diretamente do navegador, de acordo com suas próprias políticas e configurações. O KAIROS não controla as práticas de privacidade desses serviços externos.</p>
+<p>Os dados não são vendidos. Outras formas de compartilhamento somente devem ocorrer quando necessárias à operação, exigidas por lei ou autorizadas de forma adequada.</p>
+</section>
+
+<section id="retencao">
+<h2>7. Retenção e exclusão de dados</h2>
+<p>Os dados locais permanecem no computador enquanto forem mantidos o banco SQLite, os arquivos de trabalho e os perfis do WebView2. Encerrar uma sessão não apaga o perfil do navegador.</p>
+<p>No gateway, os registros de conexão e os eventos recebidos são mantidos no Cloudflare D1. O código atual não implementa um prazo automático de expiração ou uma rotina periódica de limpeza para os eventos de webhook. O encerramento de uma conexão remove o registro de conexão e as contas vinculadas, mas não apaga automaticamente os eventos históricos já recebidos.</p>
+<p>Esta versão ainda não oferece uma função automática de autoatendimento para apagar todos os dados. Para solicitar acesso, correção ou exclusão, envie um e-mail para <a href="mailto:cleber1204@gmail.com">cleber1204@gmail.com</a>, informando que o pedido se refere ao KAIROS Social Desk. Após a confirmação razoável da identidade e a análise do pedido, o responsável verificará os dados aplicáveis e realizará manualmente as medidas cabíveis, respeitando obrigações legais de conservação.</p>
+<p>Como ainda não existe um prazo geral de retenção automatizado, os períodos serão avaliados conforme a finalidade, a necessidade de manutenção do serviço e as obrigações legais. Essa política deverá ser atualizada quando forem definidos e implantados prazos técnicos específicos.</p>
+</section>
+
+<section id="direitos">
+<h2>8. Direitos do titular</h2>
+<p>Nos termos da LGPD e observadas as condições legais, o titular poderá solicitar confirmação da existência de tratamento, acesso aos dados, correção de informações incompletas ou desatualizadas, anonimização, bloqueio ou eliminação de dados desnecessários ou tratados em desconformidade, informação sobre compartilhamentos e revogação do consentimento quando essa for a base legal utilizada.</p>
+<p>Os pedidos devem ser encaminhados ao e-mail informado na seção 10. Poderão ser solicitadas informações razoáveis para confirmar a identidade do solicitante e proteger os dados contra acesso indevido.</p>
+</section>
+
+<section id="menores">
+<h2>9. Crianças e adolescentes</h2>
+<p>O KAIROS Social Desk é uma ferramenta de gestão de redes sociais destinada ao uso profissional e não é direcionada a crianças. Qualquer tratamento de dados de crianças ou adolescentes deverá observar as regras específicas da LGPD e o melhor interesse do menor.</p>
+</section>
+
+<section id="contato">
+<h2>10. Alterações e contato</h2>
+<p>Esta política poderá ser atualizada quando novas funcionalidades forem disponibilizadas, quando os fluxos de dados forem alterados ou quando houver mudanças legais relevantes. A versão vigente permanecerá disponível neste endereço público.</p>
+<div class="contact">
+<strong>Contato para privacidade e solicitações</strong>
+<p>Responsável: Cleber Benjamin Peixoto</p>
+<p>E-mail: <a href="mailto:cleber1204@gmail.com">cleber1204@gmail.com</a></p>
+</div>
+</section>
+</main>
+<footer>© 2026 KAIROS Social Desk. Política de Privacidade.</footer>
+</div>
+</body>
+</html>
